@@ -39,7 +39,7 @@ ckpt_folder = os.path.join(stylegan, 'checkpoints')
 dest_folder = os.path.join(ckpt_folder, 'wikiarts')
 dest_path_model = os.path.join(dest_folder, 'network-final-wikiarts.pkl')
 #dest_path_encoder = os.path.join(dest_folder, 'network-final-wikiarts.pkl')
-if not os.path.exists(dest_path):
+if not os.path.exists(dest_path_model):
     utils.try_make_folder(ckpt_folder)
     utils.try_make_folder(dest_folder)
     utils.download_file_from_google_drive(file_id, dest_path_model)
